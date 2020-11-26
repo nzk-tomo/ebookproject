@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="jumbotron">
+   <div class="container">
+     <h1 class="display-4">キャンペーン中の電子書籍</h1>
+   </div>
+ </div>
+{% endblock header %}
+
+{% block content %}
+<div class="container">
+  <a href="{% url 'ebbw' %}" class="btn btn-primary">bookwalker</a>
+  <a href="{% url 'ebkb' %}" class="btn btn-primary">楽天kobo</a>
+</div>
+{% endblock content %}

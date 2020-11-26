@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="jumbotron">
+   <div class="container">
+     <h1 class="display-4">楽天kobo</h1>
+   </div>
+ </div>
+{% endblock header %}
+
+{% block content %}
+<div class="container">
+<ul class="list-group list-group-flush">
+ <table border="2">
+   <tr>
+     <th>タイトル</th>
+     <th>URL</th>
+     <th>備考</th>
+   </tr>
+   {% for get, get2, get3 in list %} 
+   <tr>
+     <td>{{ get }}</td>
+     <td><a href="{{ get2 }}">{{ get2 }}</a></td>
+     <td>{{ get3 }}</td>
+   </tr>
+   {% endfor %}
+ </table>
+</ul>
+</div>
+{% endblock content %}

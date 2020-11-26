@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="jumbotron">
+   <div class="container">
+     <h1 class="display-4">bookwalker</h1>
+   </div>
+ </div>
+{% endblock header %}
+
+{% block content %}
+<div class="container">
+<ul class="list-group list-group-flush">
+ <table border="2">
+   <tr>
+     <th>レーベル</th>
+     <th>タイトル</th>
+     <th>URL</th>
+     <th>備考</th>
+   </tr>
+   {% for get, get2, get3, get4 in list %} 
+   <tr>
+     <td>{{ get }}</td>
+     <td>{{ get2 }}</td>
+     <td><a href="{{ get3 }}">{{ get3 }}</a></td>
+     <td>{{ get4 }}</td>
+   </tr>
+   {% endfor %}
+ </table>
+</ul>
+</div>
+{% endblock content %}
