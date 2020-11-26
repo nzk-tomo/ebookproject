@@ -38,3 +38,5 @@
  サイトごとにデータベース設置
  現状bookwalkerのみ
 # ローカルでの動作方法
+ Python 3.9.0
+ https://github.com/nzk-tomo/ebookproject.git
